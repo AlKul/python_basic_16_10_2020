@@ -7,3 +7,16 @@
 Сделать вывод исходной строки, но каждое слово должно начинаться с заглавной буквы.
 Необходимо использовать написанную ранее функцию int_func().
 '''
+
+def int_func(string):
+    string = string.split(" ")
+    for i in range(len(string)):
+        string[i] = string[i].capitalize()
+        print(string[i])
+#        for word in string:
+#        word = word.capitalize()
+#        print(word)
+    print(string)
+    return string
+
+print(int_func("text bounce up down"))
