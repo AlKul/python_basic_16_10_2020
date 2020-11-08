@@ -10,22 +10,21 @@
 Задачу можно усложнить, реализовав проверку порядка режимов,
 и при его нарушении выводить соответствующее сообщение и завершать скрипт.
 '''
-#from time import sleep as sleep
-import time
+from time import sleep as sleep
+#import time
 dict = {0:"Red", 1: "Yellow...", 2: "Green" }
 class TrafficLight:
-    color = 0
+    __color = 0
 
     def running(self):
-        color = 0
-        print("__Starting__", dict[color], sep = "\n")
-        time.sleep(7)
-        color += 1
-        print(dict[color])
-        time.sleep(2)
-        color += 1
-        print(dict[color])
-        time.sleep(7)
+        print("__Starting__", dict[self.__color], sep = "\n")
+        sleep(7)
+        self.__color += 1
+        print(dict[self.__color])
+        sleep(2)
+        self.__color += 1
+        print(dict[self.__color])
+        sleep(7)
         print("\nDone")
 
 tl1 = TrafficLight()
