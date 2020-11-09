@@ -29,13 +29,13 @@ class Car:
         print(self.name, ": ")
         print("Speeding up...", end = "")
         sleep(2.5/self.k)
-        print("40", end = "...")
+        print("( \ ) 40", end = "...")
         self.speed = 40.
         sleep(2.5/self.k)
-        print("60", end = "...")
+        print("( | ) 60", end = "...")
         self.speed = 60.
         sleep(2.5/self.k)
-        print("80")
+        print("( / ) 80")
         self.speed = 80.
 
 
